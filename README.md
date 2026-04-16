@@ -1,0 +1,60 @@
+#  Rawan Moustafa - Portfolio
+
+A modern, responsive, and beautifully animated portfolio website built with React, TypeScript, Tailwind CSS, and Framer Motion.
+
+##  Features
+
+- **Modern Design**: Clean and professional design with gradient effects and glassmorphism
+- **Smooth Animations**: Beautiful animations powered by Framer Motion
+- **Fully Responsive**: Optimized for all devices (mobile, tablet, desktop)
+- **Type-Safe**: Built with TypeScript for better code quality
+- **Fast Performance**: Optimized bundle size and lazy loading
+- **Interactive UI**: Engaging user interface with hover effects and transitions
+
+##  Tech Stack
+
+- **Framework**: React 18 + TypeScript
+- **Styling**: Tailwind CSS
+- **Animations**: Framer Motion
+- **Icons**: React Icons
+- **Build Tool**: Vite
+- **Deployment**: Ready for Vercel/Netlify
+
+
+
+
+##  Customization
+
+To customize this portfolio for your own use:
+
+1. Update personal information in the components
+2. Replace project details in `Projects.tsx`
+3. Modify skills and experience in respective components
+4. Update contact information in `Contact.tsx`
+5. Change color scheme in `tailwind.config.js`
+
+
+
+##  Sections
+
+- **Hero**: Introduction with animated profile and social links
+- **About**: Personal information and key features
+- **Experience**: Work history with timeline
+- **Projects**: Showcase of recent projects
+- **Skills**: Technical and soft skills
+- **Contact**: Contact form and information
+- **Footer**: Social links and copyright
+
+##  Contact
+
+- **Email**: rowan.mostafa2005@gmail.com
+- **Phone**: +20 1552409013
+- **Location**: Maadi, Cairo, Egypt
+- **GitHub**: [ronymostafa2005](https://github.com/ronymostafa2005)
+
+##  License
+
+This project is open source and available under the MIT License.
+
+---
+
