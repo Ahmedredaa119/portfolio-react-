@@ -42,8 +42,8 @@ const About = () => {
           </h2>
           <div className="w-16 md:w-20 h-1 bg-gradient-to-r from-blue-500 to-purple-600 mx-auto" />
         </motion.div>
- <br />
         <div className="grid md:grid-cols-2 gap-6 md:gap-12 items-center">
+          <br/>
           {/* Left Side - Image/Animation */}
           <motion.div
             initial={{ opacity: 0, x: -50 }}
