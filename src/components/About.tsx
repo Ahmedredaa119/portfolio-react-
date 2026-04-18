@@ -26,25 +26,23 @@ const About = () => {
   ];
 
   return (
-    <section id="about" className="ppy-12 md:py-20 mt-2 px-4 md:px-0 relative overflow-hidden">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8" ref={ref}>
+<section id="about" className="py-12 md:py-20 mt-2 px-4 md:px-0 relative overflow-hidden">   
+     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8" ref={ref}>
         <motion.div
           initial={{ opacity: 0, y: 50 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.5 }}
           className="relative order-2 md:order-1"
         >
-         
-          <h2 className="text-center   mb-4 md:mb-4">
+          <h2 className="text-center  mb-4 md:mb-4">
             <span className="bg-gradient-to-r from-blue-400 to-purple-600 bg-clip-text text-transparent text-2xl sm:text-3xl md:text-5xl font-bold mb-4 text-center">
               About Me
             </span>
           </h2>
-          <div className="w-16 md:w-20 h-1 bg-gradient-to-r from-blue-500 to-purple-600 mx-auto" />
+          <div className="w-20 md:w-200 h-1 bg-gradient-to-r from-blue-500 to-purple-600 mx-auto" />
         </motion.div>
-        <br/>
-        <div className="grid md:grid-cols-2 gap-6 md:gap-12 items-center">
-          
+<br />
+            <div className="grid md:grid-cols-2 gap-6 md:gap-12 items-center">          
           {/* Left Side - Image/Animation */}
           <motion.div
             initial={{ opacity: 0, x: -50 }}
@@ -83,7 +81,7 @@ const About = () => {
   currentFocus: "React.js & Next.js"
 }`}</code>
                   </pre>
-                   </div>
+                  </div>
                 </div>
               </div>
             </div>
