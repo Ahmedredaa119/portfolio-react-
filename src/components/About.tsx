@@ -34,6 +34,7 @@ const About = () => {
           transition={{ duration: 0.5 }}
           className="relative order-2 md:order-1"
         >
+          <br />
           <h2 className="text-4xl md:text-5xl font-bold mb-4">
             <span className="bg-gradient-to-r from-blue-400 to-purple-600 bg-clip-text text-transparent">
               About Me
