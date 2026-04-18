@@ -34,15 +34,15 @@ const About = () => {
           transition={{ duration: 0.5 }}
           className="relative order-2 md:order-1"
         >
-          <br />
-          <h2 className="text-4xl md:text-5xl font-bold mb-4">
-            <span className="bg-gradient-to-r from-blue-400 to-purple-600 bg-clip-text text-transparent">
+         
+          <h2 className="text-center  mb-10 md:mb-16">
+            <span className="bg-gradient-to-r from-blue-400 to-purple-600 bg-clip-text text-transparent text-2xl sm:text-3xl md:text-5xl font-bold mb-4 text-center">
               About Me
             </span>
           </h2>
-          <div className="w-20 h-1 bg-gradient-to-r from-blue-500 to-purple-600 mx-auto rounded-full" />
+          <div className="w-16 md:w-20 h-1 bg-gradient-to-r from-blue-500 to-purple-600 mx-auto" />
         </motion.div>
-
+ <br />
         <div className="grid md:grid-cols-2 gap-6 md:gap-12 items-center">
           {/* Left Side - Image/Animation */}
           <motion.div
