@@ -26,13 +26,13 @@ const About = () => {
   ];
 
   return (
-    <section id="about" className="py-20 relative overflow-hidden">
+    <section id="about" className="ppy-12 md:py-20 px-4 md:px-0 relative overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8" ref={ref}>
         <motion.div
           initial={{ opacity: 0, y: 50 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.5 }}
-          className="text-center mb-16"
+          className="relative order-2 md:order-1"
         >
           <h2 className="text-4xl md:text-5xl font-bold mb-4">
             <span className="bg-gradient-to-r from-blue-400 to-purple-600 bg-clip-text text-transparent">
@@ -42,7 +42,7 @@ const About = () => {
           <div className="w-20 h-1 bg-gradient-to-r from-blue-500 to-purple-600 mx-auto rounded-full" />
         </motion.div>
 
-        <div className="grid md:grid-cols-2 gap-12 items-center">
+        <div className="grid md:grid-cols-2 gap-6 md:gap-12 items-center">
           {/* Left Side - Image/Animation */}
           <motion.div
             initial={{ opacity: 0, x: -50 }}
@@ -65,21 +65,23 @@ const About = () => {
                     <div className="w-3 h-3 rounded-full bg-yellow-500" />
                     <div className="w-3 h-3 rounded-full bg-green-500" />
                   </div>
-                  <pre className="text-blue-400 text-sm">
+                  <div className="text-blue-400 text-sm">
+                <pre className="text-xs sm:text-sm md:text-base">
                     <code>{`const developer = {
   name: "Ahmed Reda",
   location: "Mansoura, Dakahlia",
   experience: "2+ years",
   education: "Computer Science Student",
   passion: [
-    "Front-End Development",
-    "Full Stack Web Development using PHP",
-    "UI Designer"
-    "Problem Solving"
+  "Front-End Development",
+  "Full Stack Web Development using PHP",
+  "UI Designer"
+  "Problem Solving"
   ],
   currentFocus: "React.js & Next.js"
 }`}</code>
                   </pre>
+                   </div>
                 </div>
               </div>
             </div>
