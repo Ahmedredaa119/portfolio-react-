@@ -57,19 +57,19 @@ const Hero = () => {
                   ],
                 }}
                 transition={{ duration: 3, repeat: Infinity }}
-                className="w-40 h-40 md:w-48 md:h-48 rounded-full bg-gradient-to-br from-blue-500 to-purple-600 p-1"
+                className="w-60 h-50 md:w-95 md:h-70 rounded-full bg-gradient-to-br from-blue-500 to-purple-600 p-1"
               >
                   
                 <img 
-                  src="/image1.jpeg" 
+                  src="/public/14.png"
                   alt="Ahmed Reda"
                   className="w-full h-full rounded-full object-cover"
                 />
               </motion.div>
               <motion.div
                 animate={{ rotate: 360 }}
-                transition={{ duration: 20, repeat: Infinity, ease: 'linear' }}
-                className="absolute inset-0 rounded-full border-4 border-dashed border-blue-500/30"
+                transition={{ duration: 10, repeat: Infinity, ease: 'linear' }}
+                className="absolute inset-0 rounded-full "
               />
             </div>
           </motion.div>
