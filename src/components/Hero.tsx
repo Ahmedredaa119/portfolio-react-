@@ -61,7 +61,7 @@ const Hero = () => {
               >
                   
                 <img 
-                  src="/public/14.png"
+                  src="/14.png"
                   alt="Ahmed Reda"
                   className="w-full h-full rounded-full object-cover"
                 />
