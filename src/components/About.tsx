@@ -6,7 +6,6 @@ import { FaCode, FaRocket, FaPalette } from 'react-icons/fa';
 const About = () => {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true });
-
   const features = [
     {
       icon: FaCode,
@@ -24,9 +23,8 @@ const About = () => {
       description: 'Creating beautiful and intuitive user interfaces',
     },
   ];
-
   return (
-<section id="about" className="py-12 md:py-20 mt-2 px-4 md:px-0 relative overflow-hidden">   
+<section id="about" className="py-12 md:py-20 mt-2 px-4 sm:px-6 md:px-0 relative overflow-hidden">   
      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8" ref={ref}>
         <motion.div
           initial={{ opacity: 0, y: 50 }}
@@ -34,7 +32,7 @@ const About = () => {
           transition={{ duration: 0.5 }}
           className="relative order-2 md:order-1"
         >
-          <h2 className="text-center  mb-4 md:mb-4">
+          <h2 className="text-center mb-6">
             <span className="bg-gradient-to-r from-blue-400 to-purple-600 bg-clip-text text-transparent text-2xl sm:text-3xl md:text-5xl font-bold mb-4 text-center">
               About Me
             </span>
@@ -42,7 +40,7 @@ const About = () => {
           <div className="w-20 md:w-200 h-1 bg-gradient-to-r from-blue-500 to-purple-600 mx-auto" />
         </motion.div>
 <br />
-            <div className="grid md:grid-cols-2 gap-6 md:gap-12 items-center">          
+              <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-center">       
           {/* Left Side - Image/Animation */}
           <motion.div
             initial={{ opacity: 0, x: -50 }}
@@ -58,7 +56,7 @@ const About = () => {
                 transition={{ duration: 20, repeat: Infinity, ease: 'linear' }}
                 className="absolute inset-0 rounded-lg bg-gradient-to-r from-blue-500/20 to-purple-600/20 blur-xl"
               />
-              <div className="relative bg-slate-800/50 backdrop-blur-sm rounded-lg p-8 border border-slate-700">
+              <div className="relative bg-slate-800/50 backdrop-blur-sm rounded-lg p-4 sm:p-6 md:p-8 border border-slate-700">
                 <div className="space-y-4">
                   <div className="flex items-center space-x-2">
                     <div className="w-3 h-3 rounded-full bg-red-500" />
@@ -66,7 +64,8 @@ const About = () => {
                     <div className="w-3 h-3 rounded-full bg-green-500" />
                   </div>
                   <div className="text-blue-400 text-sm">
-                <pre className="text-xs sm:text-sm md:text-base">
+               <div className="w-full overflow-x-auto">
+           <pre className="text-xs sm:text-sm md:text-base whitespace-pre-wrap break-words">
                     <code>{`const developer = {
   name: "Ahmed Reda",
   location: "Mansoura, Dakahlia",
@@ -82,6 +81,7 @@ const About = () => {
 }`}</code>
                   </pre>
                   </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -94,8 +94,7 @@ const About = () => {
             transition={{ duration: 0.5, delay: 0.4 }}
             className="space-y-6"
           >
-            <p className="text-gray-300 text-lg leading-relaxed">
-             I'm Ahmed Reda, a <span className="text-blue-400 font-semibold">Front-End Developer</span>  specializing in the design and development of modern, responsive user interfaces.with over 2 years of experience in building modern web applications. 
+          <p className="text-gray-300 text-sm sm:text-base md:text-lg leading-relaxed sm:leading-loose">             I'm Ahmed Reda, a <span className="text-blue-400 font-semibold">Front-End Developer</span>  specializing in the design and development of modern, responsive user interfaces.with over 2 years of experience in building modern web applications. 
             </p>
             <p className="text-gray-300 text-lg leading-relaxed">
               My journey started at <span className="text-purple-400 font-semibold"> National Telecommunication Institute </span>, Academy, and since then, I've worked with various startups and companies, delivering high-quality solutions that exceed expectations.
